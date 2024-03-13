@@ -1,8 +1,8 @@
 "use strict";
 
 const mongoose = require("mongoose");
-
-const connectString = "mongodb+srv://sanglm2207:78LpH1LHh3nHIGPo@cluster0.nvvppa2.mongodb.net/";
+const { db } = require("../configs/mongo");
+const connectString = db.connectURI;
 
 class Datebase {
     constructor() {
